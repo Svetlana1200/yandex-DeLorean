@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+}
+.label-theme,
+.label-font ,
+.label-size {
+    position: absolute;
+    left: 20px;
+    width: 60px;
+    padding: 8px;
+    text-align: center;
+}
+
+.label-theme {
+    
+    top: 20px;
+}
+.label-font {
+    top: 60px;
+}
+
+.label-size {
+    top: 100px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#size-mode-checkbox ~ .label-size,
+#font-mode-checkbox ~ .label-font,
+#light-mode-checkbox ~ .label-theme{
+    background-color:  #8281d4;
+    color: black;
+}
+
+#size-mode-checkbox:checked ~ .label-size,
+#font-mode-checkbox:checked ~ .label-font,
+#light-mode-checkbox:checked ~ .label-theme{
+    background-color: #3c3bc7;
+    color: black;
+}
+
+#light-mode-checkbox:checked ~ .newspaper{
+    background-color: #5d4d4d;
+    color: white;
+}
+
+.newspaper {
+    background-color: #d4ca81;
+    color: black;
+}
+
+.newspaper-article-wrapper {
+    padding-top: 100px;
+    padding-bottom: 3px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#light-mode-checkbox:checked ~ .newspaper .newspaper-article-wrapper {
+    border-bottom: 1px solid white;
+}
+
+.newspaper-article
+{
+    font: small-caps italic 700 100px / 20px Arial, sans-serif;
+}
+
+.column1, 
+.column2, 
+.column3 {
+    display: flex;
+    align-items: flex-end;
+    width: 33%;
+    font-size: 16px;
+}
+.column1 {
+    margin-left: 20px;
+}
+.column2 {
+    font-size: 20px;
+    justify-content: center;
+}
+.column3 {
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.header {
+    display: flex;
+    border-bottom: 3px solid black;
+    justify-content: space-between;
+}
+
+#light-mode-checkbox:checked ~ .newspaper .header {
+    border-bottom: 3px solid white;
+}
+
+.content {
+    padding: 20px;
+    column-count: 3;
+    column-width: 450px;
+    column-gap: 50px;
+    column-rule: 1px solid black;
+}
+
+
+#light-mode-checkbox:checked ~ .newspaper .content {
+    column-rule: 1px solid white;
+}
+
+.first::first-letter {
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.article1 {
+    column-count: 2;
+    column-width: 75px;
+    column-gap: 40px;
+    column-rule: 1px dotted black;
+}
+#light-mode-checkbox:checked ~ .newspaper .article1 {
+    column-rule: 1px dotted white;
+}
+
+
+.article1,
+.article2,
+.article3 {
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+.article-all {
+    column-span: all;
+    padding: 4px;
+}
+
+
+.article4 {
+    border-top: 5px solid black;
+    column-span: all;
+}
+#light-mode-checkbox:checked ~ .newspaper .article4 {
+    border-top: 5px solid white;
+}
+
+
+
+.img100 {
+    width: 100px;
+}
+.img200 {
+    width: 200px;
+}
+.img350 {
+    width: 350px;
+}
+
+
+.image-center {
+    column-span: all;
+    margin: 10px;
+    margin-left: 33%;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.right{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: "MyCursiv";
+    src: url('./fonts/Caveat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MyHeader";
+    src: url('./fonts/Comfortaa-Light.ttf') format('truetype');
+}
+   
+@font-face {
+    font-family: "MainText";
+    src: url('./fonts/JetBrainsMono-Light.ttf') format('truetype');
+}
+   
+@font-face {
+    font-family: "MainText2";
+    src: url('./fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MyCursiv2";
+    src: url('./fonts/BadScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MyHeader2";
+    src: url('./fonts/KellySlab-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MainHeader";
+    src: url('./fonts/Chomsky.otf') format('truetype');
+}
+
+.text-cursiv {
+    font-family: "MyCursiv";
+    font-size: 20px;
+}
+
+.text-headers {
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "MyHeader";
+    text-align: center;
+}
+
+.main-text {
+    text-indent: 10px;
+    font-family: "MainText";
+    letter-spacing: 1px;
+    hyphens: manual;
+    font-size: 16px;
+    /*text-align: justify;*/
+}
+
+.text {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    font-family: "MainText";
+}
+
+aside {  
+    float: right;
+    height: 100%;
+    width: 1ch;
+    word-break: break-all;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-left: 10px;
+}
+
+#light-mode-checkbox:checked ~ .newspaper aside {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+
+#size-mode-checkbox:checked ~ .newspaper .column1,
+#size-mode-checkbox:checked ~ .newspaper .column3{
+    font-size: 19px;
+}
+#size-mode-checkbox:checked ~ .newspaper .column2{
+    font-size: 23px;
+}
+
+#size-mode-checkbox:checked ~ .newspaper .first::first-letter{
+    font-size: 40px;
+}
+
+#size-mode-checkbox:checked ~ .newspaper .text-cursiv{
+    font-size: 28px;
+}
+#size-mode-checkbox:checked ~ .newspaper .text-headers{
+    font-size: 28px;
+}
+#size-mode-checkbox:checked ~ .newspaper .main-text{
+    font-size: 19px;
+}
+#size-mode-checkbox:checked ~ .newspaper .text{
+    font-size: 18px;
+}
+
+
+#font-mode-checkbox:checked ~ .newspaper .text-headers{
+    font-family: "MyHeader2";
+}
+
+#font-mode-checkbox:checked ~ .newspaper .text-cursiv{
+    font-family: "MyCursiv2";
+}
+#font-mode-checkbox:checked ~ .newspaper .main-text{
+    font-family: "MainText2";
+}
+#font-mode-checkbox:checked ~ .newspaper .text{
+    font-family: "MainTex2t";
+}
+
+#font-mode-checkbox:checked ~ .newspaper .newspaper-article {
+    font-family: "MainHeader";
+}
+
+.quote {
+    display: inline;
+    font-weight: bold;
+}

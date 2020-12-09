@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Газета</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <input type="checkbox" id="light-mode-checkbox">
+        <label for="light-mode-checkbox" class="label-theme">theme</label>
+
+        <input type="checkbox" id="font-mode-checkbox">
+        <label for="font-mode-checkbox" class="label-font">font</label>
+        
+        <input type="checkbox" id="size-mode-checkbox">
+        <label for="size-mode-checkbox" class="label-size">size</label>
+
+        <div class="newspaper">
+            <article class="newspaper-article-wrapper">
+                <span class="newspaper-article">Computer Science</span>
+            </article>
+            <header class=header>
+                <p class="column1 text">г.Москва, ул. Ильинка, 23/16</p>
+                <h2 class="column2 main-text">Python is my LOVE</h2>
+                <p class="column3 text">Дата: 05.12.2020</p>
+            </header>
+            <div class=content>
+                <article class="article1">
+                    <header>
+                        <h3 class="article-all text-headers">Название языка</h3>
+                    </header>
+                    <section>
+                        <img src="newspaper/1.jpg" alt="" class="left img100">
+                        <p class="main-text first">
+                            На&shy;зва&shy;ние язы&shy;ка про&shy;изо&shy;шло во&shy;все не от на&shy;зва&shy;ния се&shy;мейст&shy;ва пре&shy;смы&shy;ка&shy;ю&shy;щих&shy;ся. 
+                            Ав&shy;тор на&shy;звал язык в честь по&shy;пу&shy;ляр&shy;но&shy;го бри&shy;тан&shy;ско&shy;го ко&shy;ме&shy;дий&shy;но&shy;го те&shy;ле&shy;шоу 1970-х «Ле&shy;та&shy;ю&shy;щий цирк Мон&shy;ти Пай&shy;то&shy;на». 
+                            Впро&shy;чем, всё рав&shy;но на&shy;зва&shy;ние язы&shy;ка ча&shy;ще свя&shy;зы&shy;ва&shy;ют имен&shy;но со зме&shy;ёй, не&shy;же&shy;ли с пе&shy;ре&shy;да&shy;чей — пик&shy;то&shy;грам&shy;мы фай&shy;лов в KDE или в 
+                            Microsoft Windows и да&shy;же эм&shy;бле&shy;ма на сай&shy;те python.org (до вы&shy;хо&shy;да вер&shy;сии 2.5) изо&shy;бра&shy;жа&shy;ют зме&shy;и&shy;ные го&shy;ло&shy;вы. 
+                            Важ&shy;ная цель раз&shy;ра&shy;бот&shy;чи&shy;ков Python — со&shy;зда&shy;вать его за&shy;бав&shy;ным для ис&shy;поль&shy;зо&shy;ва&shy;ния. Это от&shy;ра&shy;же&shy;но в его на&shy;зва&shy;нии, 
+                            ко&shy;то&shy;рое при&shy;шло из Мон&shy;ти Пай&shy;то&shy;на. Так&shy;же это от&shy;ра&shy;же&shy;но в иног&shy;да игри&shy;вом под&shy;хо&shy;де к обу&shy;ча&shy;ю&shy;щим про&shy;грам&shy;мам и 
+                            спра&shy;воч&shy;ным ма&shy;те&shy;ри&shy;а&shy;лам, та&shy;ким как при&shy;ме&shy;ры ис&shy;поль&shy;зо&shy;ва&shy;ния, ко&shy;то&shy;рые ис&shy;поль&shy;зу&shy;ют по&shy;ня&shy;тия вет&shy;чи&shy;ны и яиц вмес&shy;то стан&shy;дарт&shy;ных foo и bar.
+                        </p>
+                        <h3 class="article-all text-headers">
+                            История
+                        </h3>
+                        <p class="main-text">
+                            Со&shy;зда&shy;ние язы&shy;ка Python на&shy;чи&shy;на&shy;лось до&shy;воль&shy;но мед&shy;лен&shy;но и не&shy;уве&shy;рен&shy;но. Глав&shy;ным эн&shy;ту&shy;зи&shy;ас&shy;том, ко&shy;то&shy;рый в 1990 го&shy;ду пы&shy;тал&shy;ся во&shy;пло&shy;тить
+                            Python в ре&shy;аль&shy;ность, стал Гви&shy;до Ван Рос&shy;сум. Имен&shy;но этот че&shy;ло&shy;век, ра&shy;бо&shy;тая над раз&shy;ра&shy;бот&shy;кой язы&shy;ка ABC в Гол&shy;ланд&shy;ском ин&shy;сти&shy;ту&shy;те 
+                            CWI, по&shy;нял, что хо&shy;тел бы со&shy;здать не&shy;что но&shy;вое. Это по&shy;слу&shy;жи&shy;ло стар&shy;том для на&shy;пи&shy;са&shy;ния но&shy;во&shy;го ин&shy;тер&shy;п&shy;ре&shy;та&shy;то&shy;ра; ко&shy;неч&shy;но, не 
+                            без ис&shy;поль&shy;зо&shy;ва&shy;ния не&shy;ко&shy;то&shy;рых идей, взя&shy;тых с ABC.
+                        </p>
+                        <p class="main-text">
+                            Ин&shy;те&shy;рес&shy;ным мо&shy;мен&shy;том вы&shy;сту&shy;па&shy;ет то, что пер&shy;вый ра&shy;бо&shy;чий про&shy;то&shy;тип Python был со&shy;здан на до&shy;маш&shy;нем Ма&shy;кин&shy;то&shy;ше Гви&shy;до, да и еще за па&shy;ру вы&shy;ход&shy;ных.
+                            Что ка&shy;са&shy;ет&shy;ся рас&shy;прост&shy;ра&shy;не&shy;ния, то де&shy;ла&shy;лось это с по&shy;мощью Ин&shy;тер&shy;нет.
+                        </p>
+                        <section class="image-center">
+                            <img src="newspaper/6.jpg" alt="" class="img200">
+                        </section>
+                        <p class="main-text">
+                            В 1996 го&shy;ду, ког&shy;да дан&shy;ный про&shy;ект на&shy;би&shy;рал кри&shy;ти&shy;чес&shy;кую мас&shy;су, к раз&shy;ра&shy;бот&shy;ке под&shy;клю&shy;чил&shy;ся Стив Ма&shy;ев&shy;ский, ко&shy;то&shy;рый был 
+                            до&shy;воль&shy;но из&shy;вест&shy;ным в се&shy;ти, так как вел свой блог «Срав&shy;ни&shy;тель&shy;ная кри&shy;ти&shy;ка язы&shy;ков про&shy;грам&shy;ми&shy;ро&shy;ва&shy;ния». Стив, как и Гви&shy;до был по&shy;клон&shy;ни&shy;ком Macintosh, 
+                            воз&shy;мож&shy;но, это и по&shy;слу&shy;жи&shy;ло ос&shy;но&shy;вой их со&shy;труд&shy;ни&shy;чест&shy;ва. Сто&shy;ить от&shy;ме&shy;тить, что язык по&shy;лу&shy;чил на&shy;зва&shy;ние «Python» не в честь ви&shy;да змей, как оши&shy;боч&shy;но счи&shy;та&shy;ют 
+                            мно&shy;гие раз&shy;ра&shy;бот&shy;чи&shy;ки. Во вре&shy;ме&shy;на раз&shy;ра&shy;бот&shy;ки «Пи&shy;то&shy;на» Гви&shy;до лю&shy;бил смот&shy;реть ко&shy;ме&shy;дий&shy;ное шоу «Воз&shy;душ&shy;ный цирк Мон&shy;ти Пай&shy;то&shy;на», по&shy;это&shy;му и на&shy;звал сво&shy;ей про&shy;ект в честь Мон&shy;ти Пай&shy;то&shy;на.
+                        </p>
+                        <p class="main-text">
+                            Так как Пи&shy;тон имел от&shy;лич&shy;ный по&shy;тен&shy;ци&shy;ал и сво&shy;бод&shy;но рас&shy;прост&shy;ра&shy;нял&shy;ся че&shy;рез Ин&shy;тер&shy;нет, в не&shy;го по&shy;яви&shy;лось яд&shy;ро по&shy;сле&shy;до&shy;ва&shy;те&shy;лей — лю&shy;ди, ко&shy;то&shy;рые бы&shy;ли 
+                            за&shy;ин&shy;те&shy;ре&shy;со&shy;ва&shy;ны в раз&shy;ви&shy;тии Python как язы&shy;ка про&shy;грам&shy;ми&shy;ро&shy;ва&shy;ния. В на&shy;ча&shy;ле сво&shy;е&shy;го пу&shy;ти, этот язык имел вид не&shy;боль&shy;шо&shy;го ин&shy;тер&shy;п&shy;ре&shy;та&shy;то&shy;ра с ма&shy;лым ко&shy;ли&shy;чест&shy;вом 
+                            функ&shy;ций и пол&shy;ным от&shy;сут&shy;ст&shy;ви&shy;ем ООП, что всех не устра&shy;ива&shy;ло и мо&shy;ти&shy;ви&shy;ро&shy;ва&shy;ло на даль&shy;ней&shy;шее раз&shy;ви&shy;тие язы&shy;ка.
+                            Уже в 1991 го&shy;ду ста&shy;ли по&shy;яв&shy;лять&shy;ся пер&shy;вые средст&shy;ва ООП раз&shy;ра&shy;бот&shy;ки.
+                        </p>
+                        <p class="main-text quote">
+                            «Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.» (Martin Golding, просто цитатка)
+                        </p>
+
+                            
+                        <p class="main-text">
+                            На&shy;ли&shy;чие дру&shy;же&shy;люб&shy;но&shy;го, от&shy;зыв&shy;чи&shy;во&shy;го со&shy;об&shy;щест&shy;ва поль&shy;зо&shy;ва&shy;те&shy;лей счи&shy;та&shy;ет&shy;ся, на&shy;ря&shy;ду с ди&shy;зай&shy;нер&shy;ской ин&shy;ту&shy;и&shy;ци&shy;ей Гви&shy;до, 
+                            од&shy;ним из фак&shy;то&shy;ров успе&shy;ха Python. Раз&shy;ви&shy;тие язы&shy;ка про&shy;ис&shy;хо&shy;дит со&shy;глас&shy;но чёт&shy;ко рег&shy;ла&shy;мен&shy;ти&shy;ро&shy;ван&shy;но&shy;му про&shy;цес&shy;су со&shy;зда&shy;ния, 
+                            об&shy;суж&shy;де&shy;ния, от&shy;бо&shy;ра и ре&shy;а&shy;ли&shy;за&shy;ции до&shy;ку&shy;мен&shy;тов PEP (ан&shy;гл. Python Enhancement Proposal) — пред&shy;ло&shy;же&shy;ний по раз&shy;ви&shy;тию Python.
+                        </p>
+                    </section>
+                </article>
+                <article class="article2">
+                    <header>
+                        <h3 class="text-headers">Философия</h3>
+                    </header>
+                    <section>
+                        <p class="main-text">
+                            Раз&shy;ра&shy;бот&shy;чи&shy;ки язы&shy;ка Python при&shy;дер&shy;жи&shy;ва&shy;ют&shy;ся опре&shy;де&shy;лён&shy;ной фи&shy;ло&shy;со&shy;фии про&shy;грам&shy;ми&shy;ро&shy;ва&shy;ния, на&shy;зы&shy;ва&shy;е&shy;мой «The Zen of Python» («Дзен Пи&shy;то́на», или «Дзен Па́йто&shy;на»). 
+                            Её текст вы&shy;да&shy;ёт&shy;ся ин&shy;тер&shy;п&shy;ре&shy;та&shy;то&shy;ром Python по ко&shy;ман&shy;де import this (ра&shy;бо&shy;та&shy;ет один раз за сес&shy;сию). Ав&shy;то&shy;ром этой фи&shy;ло&shy;со&shy;фии счи&shy;та&shy;ет&shy;ся Тим Пе&shy;терс (Tim Peters).<br>
+                        </p>
+                        <p class="text-cursiv">
+                            Кра&shy;си&shy;вое луч&shy;ше, чем урод&shy;ли&shy;вое.<br>
+                            Яв&shy;ное луч&shy;ше, чем не&shy;яв&shy;ное.<br>
+                            Прос&shy;тое луч&shy;ше, чем слож&shy;ное.<br>
+                            Слож&shy;ное луч&shy;ше, чем за&shy;пу&shy;тан&shy;ное.<br>
+                            Плос&shy;кое луч&shy;ше, чем вло&shy;жен&shy;ное.<br>
+                            Раз&shy;ре&shy;жен&shy;ное луч&shy;ше, чем плот&shy;ное.<br>
+                            Чи&shy;та&shy;е&shy;мость име&shy;ет зна&shy;че&shy;ние.<br>
+                            Осо&shy;бые слу&shy;чаи не на&shy;столь&shy;ко осо&shy;бые, что&shy;бы на&shy;ру&shy;шать пра&shy;ви&shy;ла.<br>
+                            При этом прак&shy;тич&shy;ность важ&shy;нее без&shy;уп&shy;реч&shy;нос&shy;ти.<br>
+                            Ошиб&shy;ки ни&shy;ког&shy;да не долж&shy;ны за&shy;мал&shy;чи&shy;вать&shy;ся.<br>
+                            Если не за&shy;мал&shy;чи&shy;ва&shy;ют&shy;ся яв&shy;но.<br>
+                            Встре&shy;тив дву&shy;смыс&shy;лен&shy;ность, от&shy;брось ис&shy;ку&shy;ше&shy;ние уга&shy;дать.<br>
+                            Дол&shy;жен су&shy;щест&shy;во&shy;вать один — и, же&shy;ла&shy;тель&shy;но, толь&shy;ко один — оче&shy;вид&shy;ный спо&shy;соб сде&shy;лать это.<br>
+                            Хо&shy;тя он по&shy;на&shy;ча&shy;лу мо&shy;жет быть и не оче&shy;ви&shy;ден, если вы не гол&shy;лан&shy;дец.<br>
+                            Сей&shy;час луч&shy;ше, чем ни&shy;ког&shy;да.<br>
+                            Хо&shy;тя ни&shy;ког&shy;да за&shy;час&shy;тую луч&shy;ше, чем пря&shy;мо сей&shy;час.<br>
+                            Если ре&shy;а&shy;ли&shy;за&shy;цию слож&shy;но объ&shy;яс&shy;нить — идея пло&shy;ха.<br>
+                            Если ре&shy;а&shy;ли&shy;за&shy;цию лег&shy;ко объ&shy;яс&shy;нить — идея, воз&shy;мож&shy;но, хо&shy;ро&shy;ша.<br>
+                            Прост&shy;ранст&shy;ва имён — от&shy;лич&shy;ная вещь! Да&shy;вай&shy;те бу&shy;дем де&shy;лать их боль&shy;ше!
+                        </p>
+                    
+                     </section>
+                </article>
+                <article class="article3">
+                    <aside>
+                        T e l + 1 2 3 4 5 6 6 7 8 9 1 2 3
+                    </aside>
+                    <header>
+                        <h3 class="text-headers">Типы и структуры данных</h3>
+                    </header>
+                    
+                    <section class="images">
+                        <img src="newspaper/1.png" alt="" class="img350 right">
+                        <p class="text">Иерархия типов</p>
+                    </section>
+                    <p class="main-text">
+                        Python под&shy;дер&shy;жи&shy;ва&shy;ет ди&shy;на&shy;ми&shy;чес&shy;кую ти&shy;пи&shy;за&shy;цию, то есть тип пе&shy;ре&shy;мен&shy;ной опре&shy;де&shy;ля&shy;ет&shy;ся толь&shy;ко во вре&shy;мя ис&shy;пол&shy;не&shy;ния. 
+                        По&shy;это&shy;му вмес&shy;то «при&shy;сва&shy;ива&shy;ния зна&shy;че&shy;ния пе&shy;ре&shy;мен&shy;ной» луч&shy;ше го&shy;во&shy;рить о «свя&shy;зы&shy;ва&shy;нии зна&shy;че&shy;ния с не&shy;ко&shy;то&shy;рым име&shy;нем». 
+                        В Python име&shy;ют&shy;ся встро&shy;ен&shy;ные ти&shy;пы: бу&shy;ле&shy;вый, стро&shy;ка, Unicode-стро&shy;ка, це&shy;лое чис&shy;ло про&shy;из&shy;воль&shy;ной точ&shy;нос&shy;ти, чис&shy;ло с пла&shy;ва&shy;ю&shy;щей за&shy;пя&shy;той, 
+                        ком&shy;плек&shy;с&shy;ное чис&shy;ло и не&shy;ко&shy;то&shy;рые дру&shy;гие. Из кол&shy;лек&shy;ций в Python встро&shy;е&shy;ны: спи&shy;сок, кор&shy;теж (не&shy;из&shy;ме&shy;ня&shy;е&shy;мый спи&shy;сок), сло&shy;варь, мно&shy;жест&shy;во и дру&shy;гие. 
+                        Все зна&shy;че&shy;ния яв&shy;ля&shy;ют&shy;ся объ&shy;ек&shy;та&shy;ми, в том чис&shy;ле функ&shy;ции, ме&shy;то&shy;ды, мо&shy;ду&shy;ли, клас&shy;сы.
+                    </p>
+                    <p class="main-text">
+                        До&shy;ба&shy;вить но&shy;вый тип мож&shy;но ли&shy;бо на&shy;пи&shy;сав класс (class), ли&shy;бо опре&shy;де&shy;лив но&shy;вый тип в мо&shy;ду&shy;ле рас&shy;ши&shy;ре&shy;ния (на&shy;при&shy;мер, на&shy;пи&shy;сан&shy;ном на язы&shy;ке C). 
+                        Сис&shy;те&shy;ма клас&shy;сов под&shy;дер&shy;жи&shy;ва&shy;ет на&shy;сле&shy;до&shy;ва&shy;ние (оди&shy;ноч&shy;ное и мно&shy;жест&shy;вен&shy;ное) и ме&shy;тап&shy;ро&shy;грам&shy;ми&shy;ро&shy;ва&shy;ние. Воз&shy;мож&shy;но на&shy;сле&shy;до&shy;ва&shy;ние от боль&shy;шинст&shy;ва встро&shy;ен&shy;ных ти&shy;пов и ти&shy;пов рас&shy;ши&shy;ре&shy;ний.
+                    </p>
+                    <p class="main-text">
+                        Все объ&shy;ек&shy;ты де&shy;лят&shy;ся на из&shy;ме&shy;ня&shy;е&shy;мые и не&shy;из&shy;ме&shy;ня&shy;е&shy;мые: спис&shy;ки, сло&shy;ва&shy;ри и мно&shy;жест&shy;ва яв&shy;ля&shy;ют&shy;ся из&shy;ме&shy;ня&shy;е&shy;мы&shy;ми, 
+                        а все осталь&shy;ные — не&shy;из&shy;ме&shy;ня&shy;е&shy;мы&shy;ми (на&shy;при&shy;мер, при из&shy;ме&shy;не&shy;нии стро&shy;ки фак&shy;ти&shy;чес&shy;ки со&shy;зда&shy;ёт&shy;ся но&shy;вая, а при из&shy;ме&shy;не&shy;нии спис&shy;ка — 
+                        толь&shy;ко ме&shy;ня&shy;ют&shy;ся ссыл&shy;ки в нём). Кор&shy;теж в Python яв&shy;ля&shy;ет&shy;ся, по су&shy;ти, не&shy;из&shy;ме&shy;ня&shy;е&shy;мым спис&shy;ком. Во мно&shy;гих слу&shy;ча&shy;ях кор&shy;те&shy;жи ра&shy;бо&shy;та&shy;ют быст&shy;рее спис&shy;ков, 
+                        по&shy;это&shy;му если вы не пла&shy;ни&shy;ру&shy;е&shy;те из&shy;ме&shy;нять по&shy;сле&shy;до&shy;ва&shy;тель&shy;ность, то луч&shy;ше ис&shy;поль&shy;зо&shy;вать имен&shy;но их. 
+                        Не&shy;из&shy;ме&shy;ня&shy;е&shy;мые объ&shy;ек&shy;ты (и все объ&shy;ек&shy;ты в них, если это, на&shy;при&shy;мер, кор&shy;теж) мо&shy;гут быть клю&shy;ча&shy;ми сло&shy;ва&shy;ря (долж&shy;ны иметь ме&shy;тод hash).
+                    </p>
+                </article>
+
+                <article class="article4">
+                    <header>
+                        <h3 class="text-headers">Применение</h3>
+                    </header>
+                    <section>
+                        <img src="newspaper/2.jpg" alt="" class="left img200">
+                        <img src="newspaper/4.jpg" alt="" class="right img200">
+                        <p class="main-text">
+                            
+                            Python — ста&shy;биль&shy;ный и рас&shy;прост&shy;ра&shy;нён&shy;ный язык. Он ис&shy;поль&shy;зу&shy;ет&shy;ся во мно&shy;гих про&shy;ек&shy;тах и в раз&shy;лич&shy;ных ка&shy;чест&shy;вах: как ос&shy;нов&shy;ной язык 
+                            про&shy;грам&shy;ми&shy;ро&shy;ва&shy;ния или для со&shy;зда&shy;ния рас&shy;ши&shy;ре&shy;ний и ин&shy;тег&shy;ра&shy;ции при&shy;ло&shy;же&shy;ний. На Python ре&shy;а&shy;ли&shy;зо&shy;ва&shy;но боль&shy;шое ко&shy;ли&shy;чест&shy;во про&shy;ек&shy;тов, так&shy;же 
+                            он ак&shy;тив&shy;но ис&shy;поль&shy;зу&shy;ет&shy;ся для со&shy;зда&shy;ния про&shy;то&shy;ти&shy;пов бу&shy;ду&shy;щих про&shy;грамм.
+                        </p>
+                        <p class="main-text">
+                            Яв&shy;ля&shy;ясь при&shy;ло&shy;же&shy;ни&shy;ем с от&shy;кры&shy;тым ис&shy;ход&shy;ным ко&shy;дом, ин&shy;тер&shy;п&shy;ре&shy;та&shy;тор Python ис&shy;поль&shy;зу&shy;ет&shy;ся по все&shy;му ми&shy;ру и по&shy;став&shy;ля&shy;ет&shy;ся в со&shy;ста&shy;ве опе&shy;ра&shy;ци&shy;он&shy;ных сис&shy;тем на ба&shy;зе 
+                            Linux, а так&shy;же в ком&shy;пью&shy;те&shy;рах от фир&shy;мы Apple. Python по&shy;пу&shy;ля&shy;рен сре&shy;ди ин&shy;ди&shy;ви&shy;ду&shy;аль&shy;ных раз&shy;ра&shy;бот&shy;чи&shy;ков, но так&shy;же ис&shy;поль&shy;зу&shy;ет&shy;ся круп&shy;ны&shy;ми ком&shy;па&shy;ни&shy;я&shy;ми в 
+                            до&shy;ста&shy;точ&shy;но серь&shy;ёз&shy;ных про&shy;дук&shy;тах, ори&shy;ен&shy;ти&shy;ро&shy;ван&shy;ных на по&shy;лу&shy;че&shy;ние при&shy;бы&shy;ли. Язык ак&shy;тив&shy;но ис&shy;поль&shy;зу&shy;ет&shy;ся в ком&shy;па&shy;ни&shy;ей Google в её по&shy;ис&shy;ко&shy;вой сис&shy;те&shy;ме,
+                            а ви&shy;део&shy;хос&shy;тинг Youtube в зна&shy;чи&shy;тель&shy;ной сте&shy;пе&shy;ни на&shy;пи&shy;сан с ис&shy;поль&shy;зо&shy;ва&shy;ни&shy;ем Python. В фай&shy;ло&shy;вом хос&shy;тин&shy;ге Dropbox так&shy;же ак&shy;тив&shy;но при&shy;ме&shy;ня&shy;ет&shy;ся Python, 
+                            а из-за слож&shy;нос&shy;тей ди&shy;на&shy;ми&shy;чес&shy;кой ти&shy;пи&shy;за&shy;ции и ог&shy;ром&shy;но&shy;го ко&shy;ли&shy;чест&shy;ва ко&shy;да ком&shy;па&shy;ния пе&shy;ре&shy;шла к ста&shy;ти&shy;чес&shy;ко&shy;му ти&shy;пи&shy;зи&shy;ро&shy;ва&shy;нию с по&shy;мощью от&shy;кры&shy;то&shy;го про&shy;ек&shy;та Mypy 
+                            Так&shy;же Python ак&shy;тив&shy;но ис&shy;поль&shy;зу&shy;ет&shy;ся ком&shy;па&shy;ни&shy;я&shy;ми Facebook и Instagram. Мно&shy;гие ком&shy;па&shy;нии ис&shy;поль&shy;зу&shy;ют Python для тес&shy;ти&shy;ро&shy;ва&shy;ния ап&shy;па&shy;рат&shy;но&shy;го обес&shy;пе&shy;че&shy;ния,
+                            сре&shy;ди этих ком&shy;па&shy;ния зна&shy;чат&shy;ся Intel, Cisco, Hewlett-Packard и IBM. Industrial Light & Magic и Pixar ис&shy;поль&shy;зу&shy;ют его при со&shy;зда&shy;нии ани&shy;ма&shy;ци&shy;он&shy;ных филь&shy;мов.
+                        </p>
+                        <p class="main-text">
+                            Бу&shy;ду&shy;чи язы&shy;ком об&shy;ще&shy;го на&shy;зна&shy;че&shy;ния Python при&shy;ме&shy;ним поч&shy;ти во всех сфе&shy;рах де&shy;я&shy;тель&shy;нос&shy;ти. Фак&shy;ти&shy;чес&shy;ки Python ис&shy;поль&shy;зу&shy;ет&shy;ся прак&shy;ти&shy;чес&shy;ки лю&shy;бой со&shy;лид&shy;ной ком&shy;па&shy;ни&shy;ей тем или 
+                            иным об&shy;ра&shy;зом как для вы&shy;пол&shy;не&shy;ния те&shy;ку&shy;щих за&shy;дач, так и в тес&shy;ти&shy;ро&shy;ва&shy;нии, ад&shy;ми&shy;нист&shy;ри&shy;ро&shy;ва&shy;нии или в раз&shy;ра&shy;бот&shy;ке про&shy;грам&shy;м&shy;ных про&shy;дук&shy;тов
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </body>
+</html>
